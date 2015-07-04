@@ -24,12 +24,14 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        if (!mBluetoothAdapter.isEnabled()) {
-            Intent startBluetooth = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivity(startBluetooth);
+        if (mBluetoothAdapter != null) {
+            if (!mBluetoothAdapter.isEnabled()) {
+                Intent startBluetooth = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivity(startBluetooth);
+            }
+
+            getBondedDevices();
         }
-        
-        getBondedDevices();
     }
 
     @Override
