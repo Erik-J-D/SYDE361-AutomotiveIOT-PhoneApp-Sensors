@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1665A60D3920C6D7FBB0DFD4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9435F8D5BA3027BAD586C7CB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9E32EA211B4D8D4200651641 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E32EA201B4D8D4200651641 /* DataProvider.m */; };
+		9E32EA251B4D8EBB00651641 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E32EA241B4D8EBB00651641 /* LocationManager.m */; };
+		9E32EA271B4D8EE500651641 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E32EA261B4D8EE500651641 /* CoreLocation.framework */; };
+		9E733CB41B52A53700C99B14 /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CAD1B52A53700C99B14 /* BLEDevice.m */; };
+		9E733CB51B52A53700C99B14 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CAF1B52A53700C99B14 /* BLEUtility.m */; };
+		9E733CB61B52A53700C99B14 /* DFBlunoDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CB11B52A53700C99B14 /* DFBlunoDevice.m */; };
+		9E733CB71B52A53700C99B14 /* DFBlunoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CB31B52A53700C99B14 /* DFBlunoManager.m */; };
+		9E733CB91B52A5C600C99B14 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E733CB81B52A5C600C99B14 /* CoreBluetooth.framework */; };
+		9E733CBC1B52A61600C99B14 /* OBDJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CBB1B52A61600C99B14 /* OBDJSONParser.m */; };
+		9EAEFCF51B4D92A600630E56 /* MainNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEFCF41B4D92A600630E56 /* MainNavViewController.m */; };
+		9EAEFCF81B4D930C00630E56 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEFCF71B4D930C00630E56 /* HomeViewController.m */; };
+		9EAEFD031B4DBDB500630E56 /* DataCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEFD011B4DBDB500630E56 /* DataCollectionViewCell.m */; };
+		9EAEFD041B4DBDB500630E56 /* DataCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EAEFD021B4DBDB500630E56 /* DataCollectionViewCell.xib */; };
+		9EAEFD121B4DD83500630E56 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEFD101B4DD83500630E56 /* FeedbackViewController.m */; };
+		9EAEFD131B4DD83500630E56 /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EAEFD111B4DD83500630E56 /* FeedbackViewController.xib */; };
+		9EB49E401B4D879A0075D5F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E3F1B4D879A0075D5F0 /* main.m */; };
+		9EB49E431B4D879A0075D5F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E421B4D879A0075D5F0 /* AppDelegate.m */; };
+		9EB49E461B4D879A0075D5F0 /* SYDE351_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E441B4D879A0075D5F0 /* SYDE351_iOS.xcdatamodeld */; };
+		9EB49E4E1B4D879A0075D5F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB49E4D1B4D879A0075D5F0 /* Images.xcassets */; };
+		9EB49E511B4D879A0075D5F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB49E4F1B4D879A0075D5F0 /* LaunchScreen.xib */; };
+		9EB49E5D1B4D879A0075D5F0 /* SYDE351_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E5C1B4D879A0075D5F0 /* SYDE351_iOSTests.m */; };
+		9EB49E6E1B4D8AAB0075D5F0 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E6D1B4D8AAB0075D5F0 /* Trip.m */; };
+		9EB49E711B4D8AAB0075D5F0 /* FuckUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E701B4D8AAB0075D5F0 /* FuckUp.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EB49E571B4D879A0075D5F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB49E321B4D87990075D5F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EB49E391B4D87990075D5F0;
+			remoteInfo = "SYDE351-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B720872D06E78A3332C0ECB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9435F8D5BA3027BAD586C7CB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E32EA1F1B4D8D4200651641 /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		9E32EA201B4D8D4200651641 /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
+		9E32EA231B4D8EBB00651641 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		9E32EA241B4D8EBB00651641 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		9E32EA261B4D8EE500651641 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9E733CAC1B52A53700C99B14 /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
+		9E733CAD1B52A53700C99B14 /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
+		9E733CAE1B52A53700C99B14 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		9E733CAF1B52A53700C99B14 /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		9E733CB01B52A53700C99B14 /* DFBlunoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBlunoDevice.h; sourceTree = "<group>"; };
+		9E733CB11B52A53700C99B14 /* DFBlunoDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBlunoDevice.m; sourceTree = "<group>"; };
+		9E733CB21B52A53700C99B14 /* DFBlunoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBlunoManager.h; sourceTree = "<group>"; };
+		9E733CB31B52A53700C99B14 /* DFBlunoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBlunoManager.m; sourceTree = "<group>"; };
+		9E733CB81B52A5C600C99B14 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		9E733CBA1B52A61600C99B14 /* OBDJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDJSONParser.h; sourceTree = "<group>"; };
+		9E733CBB1B52A61600C99B14 /* OBDJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBDJSONParser.m; sourceTree = "<group>"; };
+		9EAEFCF31B4D92A600630E56 /* MainNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavViewController.h; sourceTree = "<group>"; };
+		9EAEFCF41B4D92A600630E56 /* MainNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavViewController.m; sourceTree = "<group>"; };
+		9EAEFCF61B4D930C00630E56 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9EAEFCF71B4D930C00630E56 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9EAEFD001B4DBDB500630E56 /* DataCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCollectionViewCell.h; sourceTree = "<group>"; };
+		9EAEFD011B4DBDB500630E56 /* DataCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCollectionViewCell.m; sourceTree = "<group>"; };
+		9EAEFD021B4DBDB500630E56 /* DataCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataCollectionViewCell.xib; sourceTree = "<group>"; };
+		9EAEFD0F1B4DD83500630E56 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		9EAEFD101B4DD83500630E56 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		9EAEFD111B4DD83500630E56 /* FeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
+		9EB49E3A1B4D879A0075D5F0 /* SYDE351-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SYDE351-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB49E3E1B4D879A0075D5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB49E3F1B4D879A0075D5F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EB49E411B4D879A0075D5F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9EB49E421B4D879A0075D5F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9EB49E451B4D879A0075D5F0 /* SYDE351_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SYDE351_iOS.xcdatamodel; sourceTree = "<group>"; };
+		9EB49E4D1B4D879A0075D5F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9EB49E501B4D879A0075D5F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9EB49E561B4D879A0075D5F0 /* SYDE351-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SYDE351-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB49E5B1B4D879A0075D5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB49E5C1B4D879A0075D5F0 /* SYDE351_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYDE351_iOSTests.m; sourceTree = "<group>"; };
+		9EB49E6C1B4D8AAB0075D5F0 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		9EB49E6D1B4D8AAB0075D5F0 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		9EB49E6F1B4D8AAB0075D5F0 /* FuckUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuckUp.h; sourceTree = "<group>"; };
+		9EB49E701B4D8AAB0075D5F0 /* FuckUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuckUp.m; sourceTree = "<group>"; };
+		9F60A35B58189BB26CD0309D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EB49E371B4D87990075D5F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E733CB91B52A5C600C99B14 /* CoreBluetooth.framework in Frameworks */,
+				9E32EA271B4D8EE500651641 /* CoreLocation.framework in Frameworks */,
+				1665A60D3920C6D7FBB0DFD4 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB49E531B4D879A0075D5F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B27CED2E4314C2CA0E9DCCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E733CB81B52A5C600C99B14 /* CoreBluetooth.framework */,
+				9E32EA261B4D8EE500651641 /* CoreLocation.framework */,
+				9435F8D5BA3027BAD586C7CB /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E32EA1E1B4D8D1100651641 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EB49E6F1B4D8AAB0075D5F0 /* FuckUp.h */,
+				9EB49E701B4D8AAB0075D5F0 /* FuckUp.m */,
+				9EB49E6C1B4D8AAB0075D5F0 /* Trip.h */,
+				9EB49E6D1B4D8AAB0075D5F0 /* Trip.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9E32EA221B4D8D4800651641 /* Data Providers + Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9E733CAA1B52A51F00C99B14 /* Bluno */,
+				9E32EA1F1B4D8D4200651641 /* DataProvider.h */,
+				9E32EA201B4D8D4200651641 /* DataProvider.m */,
+				9E32EA231B4D8EBB00651641 /* LocationManager.h */,
+				9E32EA241B4D8EBB00651641 /* LocationManager.m */,
+				9E733CBA1B52A61600C99B14 /* OBDJSONParser.h */,
+				9E733CBB1B52A61600C99B14 /* OBDJSONParser.m */,
+			);
+			name = "Data Providers + Managers";
+			sourceTree = "<group>";
+		};
+		9E733CAA1B52A51F00C99B14 /* Bluno */ = {
+			isa = PBXGroup;
+			children = (
+				9E733CAB1B52A53700C99B14 /* Core */,
+				9E733CB01B52A53700C99B14 /* DFBlunoDevice.h */,
+				9E733CB11B52A53700C99B14 /* DFBlunoDevice.m */,
+				9E733CB21B52A53700C99B14 /* DFBlunoManager.h */,
+				9E733CB31B52A53700C99B14 /* DFBlunoManager.m */,
+			);
+			name = Bluno;
+			sourceTree = "<group>";
+		};
+		9E733CAB1B52A53700C99B14 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9E733CAC1B52A53700C99B14 /* BLEDevice.h */,
+				9E733CAD1B52A53700C99B14 /* BLEDevice.m */,
+				9E733CAE1B52A53700C99B14 /* BLEUtility.h */,
+				9E733CAF1B52A53700C99B14 /* BLEUtility.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9EAEFCF91B4D932000630E56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EAEFD0F1B4DD83500630E56 /* FeedbackViewController.h */,
+				9EAEFD101B4DD83500630E56 /* FeedbackViewController.m */,
+				9EAEFCF31B4D92A600630E56 /* MainNavViewController.h */,
+				9EAEFCF41B4D92A600630E56 /* MainNavViewController.m */,
+				9EAEFCF61B4D930C00630E56 /* HomeViewController.h */,
+				9EAEFCF71B4D930C00630E56 /* HomeViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9EAEFD141B4DD85200630E56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EAEFD111B4DD83500630E56 /* FeedbackViewController.xib */,
+				9EAEFD001B4DBDB500630E56 /* DataCollectionViewCell.h */,
+				9EAEFD011B4DBDB500630E56 /* DataCollectionViewCell.m */,
+				9EAEFD021B4DBDB500630E56 /* DataCollectionViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9EB49E311B4D87990075D5F0 = {
+			isa = PBXGroup;
+			children = (
+				9EB49E3C1B4D879A0075D5F0 /* SYDE351-iOS */,
+				9EB49E591B4D879A0075D5F0 /* SYDE351-iOSTests */,
+				9EB49E3B1B4D879A0075D5F0 /* Products */,
+				FB358B805C5A563A2FD432CF /* Pods */,
+				7B27CED2E4314C2CA0E9DCCE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9EB49E3B1B4D879A0075D5F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EB49E3A1B4D879A0075D5F0 /* SYDE351-iOS.app */,
+				9EB49E561B4D879A0075D5F0 /* SYDE351-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EB49E3C1B4D879A0075D5F0 /* SYDE351-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9EB49E411B4D879A0075D5F0 /* AppDelegate.h */,
+				9EB49E421B4D879A0075D5F0 /* AppDelegate.m */,
+				9EB49E4D1B4D879A0075D5F0 /* Images.xcassets */,
+				9EB49E4F1B4D879A0075D5F0 /* LaunchScreen.xib */,
+				9EB49E441B4D879A0075D5F0 /* SYDE351_iOS.xcdatamodeld */,
+				9EB49E3D1B4D879A0075D5F0 /* Supporting Files */,
+				9E32EA1E1B4D8D1100651641 /* Models */,
+				9E32EA221B4D8D4800651641 /* Data Providers + Managers */,
+				9EAEFCF91B4D932000630E56 /* Controllers */,
+				9EAEFD141B4DD85200630E56 /* Views */,
+			);
+			path = "SYDE351-iOS";
+			sourceTree = "<group>";
+		};
+		9EB49E3D1B4D879A0075D5F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB49E3E1B4D879A0075D5F0 /* Info.plist */,
+				9EB49E3F1B4D879A0075D5F0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EB49E591B4D879A0075D5F0 /* SYDE351-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EB49E5C1B4D879A0075D5F0 /* SYDE351_iOSTests.m */,
+				9EB49E5A1B4D879A0075D5F0 /* Supporting Files */,
+			);
+			path = "SYDE351-iOSTests";
+			sourceTree = "<group>";
+		};
+		9EB49E5A1B4D879A0075D5F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB49E5B1B4D879A0075D5F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB358B805C5A563A2FD432CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F60A35B58189BB26CD0309D /* Pods.debug.xcconfig */,
+				8B720872D06E78A3332C0ECB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EB49E391B4D87990075D5F0 /* SYDE351-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB49E601B4D879A0075D5F0 /* Build configuration list for PBXNativeTarget "SYDE351-iOS" */;
+			buildPhases = (
+				3A21BE9830298239ABAD2AF7 /* Check Pods Manifest.lock */,
+				9EB49E361B4D87990075D5F0 /* Sources */,
+				9EB49E371B4D87990075D5F0 /* Frameworks */,
+				9EB49E381B4D87990075D5F0 /* Resources */,
+				4FF9A8753861B878457CC13B /* Copy Pods Resources */,
+				6A660B4334137D1589AA2356 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SYDE351-iOS";
+			productName = "SYDE351-iOS";
+			productReference = 9EB49E3A1B4D879A0075D5F0 /* SYDE351-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EB49E551B4D879A0075D5F0 /* SYDE351-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB49E631B4D879A0075D5F0 /* Build configuration list for PBXNativeTarget "SYDE351-iOSTests" */;
+			buildPhases = (
+				9EB49E521B4D879A0075D5F0 /* Sources */,
+				9EB49E531B4D879A0075D5F0 /* Frameworks */,
+				9EB49E541B4D879A0075D5F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EB49E581B4D879A0075D5F0 /* PBXTargetDependency */,
+			);
+			name = "SYDE351-iOSTests";
+			productName = "SYDE351-iOSTests";
+			productReference = 9EB49E561B4D879A0075D5F0 /* SYDE351-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EB49E321B4D87990075D5F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = karanthukral;
+				TargetAttributes = {
+					9EB49E391B4D87990075D5F0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					9EB49E551B4D879A0075D5F0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 9EB49E391B4D87990075D5F0;
+					};
+				};
+			};
+			buildConfigurationList = 9EB49E351B4D87990075D5F0 /* Build configuration list for PBXProject "SYDE351-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EB49E311B4D87990075D5F0;
+			productRefGroup = 9EB49E3B1B4D879A0075D5F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EB49E391B4D87990075D5F0 /* SYDE351-iOS */,
+				9EB49E551B4D879A0075D5F0 /* SYDE351-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EB49E381B4D87990075D5F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB49E511B4D879A0075D5F0 /* LaunchScreen.xib in Resources */,
+				9EB49E4E1B4D879A0075D5F0 /* Images.xcassets in Resources */,
+				9EAEFD041B4DBDB500630E56 /* DataCollectionViewCell.xib in Resources */,
+				9EAEFD131B4DD83500630E56 /* FeedbackViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB49E541B4D879A0075D5F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A21BE9830298239ABAD2AF7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4FF9A8753861B878457CC13B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A660B4334137D1589AA2356 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EB49E361B4D87990075D5F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EAEFD031B4DBDB500630E56 /* DataCollectionViewCell.m in Sources */,
+				9EB49E6E1B4D8AAB0075D5F0 /* Trip.m in Sources */,
+				9E32EA251B4D8EBB00651641 /* LocationManager.m in Sources */,
+				9EB49E431B4D879A0075D5F0 /* AppDelegate.m in Sources */,
+				9E733CB51B52A53700C99B14 /* BLEUtility.m in Sources */,
+				9EAEFCF51B4D92A600630E56 /* MainNavViewController.m in Sources */,
+				9E733CBC1B52A61600C99B14 /* OBDJSONParser.m in Sources */,
+				9EAEFD121B4DD83500630E56 /* FeedbackViewController.m in Sources */,
+				9E733CB71B52A53700C99B14 /* DFBlunoManager.m in Sources */,
+				9E32EA211B4D8D4200651641 /* DataProvider.m in Sources */,
+				9E733CB61B52A53700C99B14 /* DFBlunoDevice.m in Sources */,
+				9EAEFCF81B4D930C00630E56 /* HomeViewController.m in Sources */,
+				9EB49E461B4D879A0075D5F0 /* SYDE351_iOS.xcdatamodeld in Sources */,
+				9E733CB41B52A53700C99B14 /* BLEDevice.m in Sources */,
+				9EB49E401B4D879A0075D5F0 /* main.m in Sources */,
+				9EB49E711B4D8AAB0075D5F0 /* FuckUp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB49E521B4D879A0075D5F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB49E5D1B4D879A0075D5F0 /* SYDE351_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EB49E581B4D879A0075D5F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EB49E391B4D87990075D5F0 /* SYDE351-iOS */;
+			targetProxy = 9EB49E571B4D879A0075D5F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EB49E4F1B4D879A0075D5F0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EB49E501B4D879A0075D5F0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EB49E5E1B4D879A0075D5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9EB49E5F1B4D879A0075D5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EB49E611B4D879A0075D5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F60A35B58189BB26CD0309D /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SYDE351-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9EB49E621B4D879A0075D5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B720872D06E78A3332C0ECB /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SYDE351-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9EB49E641B4D879A0075D5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SYDE351-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYDE351-iOS.app/SYDE351-iOS";
+			};
+			name = Debug;
+		};
+		9EB49E651B4D879A0075D5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SYDE351-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYDE351-iOS.app/SYDE351-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EB49E351B4D87990075D5F0 /* Build configuration list for PBXProject "SYDE351-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB49E5E1B4D879A0075D5F0 /* Debug */,
+				9EB49E5F1B4D879A0075D5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB49E601B4D879A0075D5F0 /* Build configuration list for PBXNativeTarget "SYDE351-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB49E611B4D879A0075D5F0 /* Debug */,
+				9EB49E621B4D879A0075D5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB49E631B4D879A0075D5F0 /* Build configuration list for PBXNativeTarget "SYDE351-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB49E641B4D879A0075D5F0 /* Debug */,
+				9EB49E651B4D879A0075D5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9EB49E441B4D879A0075D5F0 /* SYDE351_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9EB49E451B4D879A0075D5F0 /* SYDE351_iOS.xcdatamodel */,
+			);
+			currentVersion = 9EB49E451B4D879A0075D5F0 /* SYDE351_iOS.xcdatamodel */;
+			path = SYDE351_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9EB49E321B4D87990075D5F0 /* Project object */;
+}

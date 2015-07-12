@@ -1,0 +1,86 @@
+//
+//  FeedbackViewController.m
+//  SYDE351-iOS
+//
+//  Created by Karan Thukral on 2015-07-08.
+//  Copyright (c) 2015 karanthukral. All rights reserved.
+//
+
+#import "FeedbackViewController.h"
+#import "OBDJSONParser.h"
+
+@interface FeedbackViewController ()
+
+@end
+
+@implementation FeedbackViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.blunoManager = [DFBlunoManager sharedInstance];
+    self.aryDevices = [[NSMutableArray alloc] init];
+    self.blunoManager.delegate = self;
+}
+
+#pragma mark - DFBlunoDelegate
+
+- (void)bleDidUpdateState:(BOOL)bleSupported
+{
+    if(bleSupported)
+    {
+        [self.blunoManager scan];
+    }
+}
+
+- (void)didDiscoverDevice:(DFBlunoDevice*)dev
+{
+    BOOL bRepeat = NO;
+    for (DFBlunoDevice* bleDevice in self.aryDevices)
+    {
+        if ([bleDevice isEqual:dev])
+        {
+            bRepeat = YES;
+            break;
+        }
+    }
+    if (!bRepeat)
+    {
+        [self.aryDevices addObject:dev];
+    }
+}
+
+- (void)readyToCommunicate:(DFBlunoDevice*)dev
+{
+    self.blunoDev = dev;
+}
+
+- (void)didDisconnectDevice:(DFBlunoDevice*)dev
+{
+    
+}
+
+- (void)didWriteData:(DFBlunoDevice*)dev
+{
+    
+}
+
+- (void)didReceiveData:(NSData*)data Device:(DFBlunoDevice*)dev
+{
+    [self updateUIForDictionary:[[OBDJSONParser OBDJSONParser] parseOBDData:data]];
+}
+
+
+#pragma mark - Helpers
+
+- (void)updateUIForDictionary:(NSDictionary *)dictionary
+{
+    _speedLabel.text = [(NSNumber *)dictionary[@"Speed"] stringValue];
+    _instantFuelEconomyLabel.text = [(NSNumber *)dictionary[@"InstantFuelEconomy"] stringValue];
+    NSNumber *d2f = (NSNumber *)dictionary[@"DistanceInFront"];
+    d2f = [NSNumber numberWithDouble:(d2f.doubleValue / 100.0)];
+    _d2fLabel.text = [d2f stringValue];
+    _tripDistanceLabel.text = [(NSNumber *)dictionary[@"TripDistance"] stringValue];
+
+}
+
+@end
