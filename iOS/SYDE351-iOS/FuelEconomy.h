@@ -1,5 +1,5 @@
 //
-//  FuckUp.h
+//  FuelEconomy.h
 //  SYDE351-iOS
 //
 //  Created by Karan Thukral on 2015-07-12.
@@ -11,12 +11,10 @@
 
 @class Trip;
 
-@interface FuckUp : NSManagedObject
+@interface FuelEconomy : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * lat;
-@property (nonatomic, retain) NSNumber * longitude;
-@property (nonatomic, retain) NSString * what;
-@property (nonatomic, retain) NSDate * when;
+@property (nonatomic, retain) NSNumber * value;
+@property (nonatomic, retain) NSDate * date;
 @property (nonatomic, retain) Trip *trip;
 
 @end

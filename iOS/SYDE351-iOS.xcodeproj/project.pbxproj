@@ -11,6 +11,9 @@
 		9E32EA211B4D8D4200651641 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E32EA201B4D8D4200651641 /* DataProvider.m */; };
 		9E32EA251B4D8EBB00651641 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E32EA241B4D8EBB00651641 /* LocationManager.m */; };
 		9E32EA271B4D8EE500651641 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E32EA261B4D8EE500651641 /* CoreLocation.framework */; };
+		9E3AB38C1B53208A00929239 /* FuckUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3AB38B1B53208A00929239 /* FuckUp.m */; };
+		9E3AB38F1B53208B00929239 /* FuelEconomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3AB38E1B53208B00929239 /* FuelEconomy.m */; };
+		9E3AB3921B53208B00929239 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3AB3911B53208B00929239 /* Trip.m */; };
 		9E733CB41B52A53700C99B14 /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CAD1B52A53700C99B14 /* BLEDevice.m */; };
 		9E733CB51B52A53700C99B14 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CAF1B52A53700C99B14 /* BLEUtility.m */; };
 		9E733CB61B52A53700C99B14 /* DFBlunoDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CB11B52A53700C99B14 /* DFBlunoDevice.m */; };
@@ -29,8 +32,6 @@
 		9EB49E4E1B4D879A0075D5F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB49E4D1B4D879A0075D5F0 /* Images.xcassets */; };
 		9EB49E511B4D879A0075D5F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB49E4F1B4D879A0075D5F0 /* LaunchScreen.xib */; };
 		9EB49E5D1B4D879A0075D5F0 /* SYDE351_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E5C1B4D879A0075D5F0 /* SYDE351_iOSTests.m */; };
-		9EB49E6E1B4D8AAB0075D5F0 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E6D1B4D8AAB0075D5F0 /* Trip.m */; };
-		9EB49E711B4D8AAB0075D5F0 /* FuckUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E701B4D8AAB0075D5F0 /* FuckUp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,12 @@
 		9E32EA231B4D8EBB00651641 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		9E32EA241B4D8EBB00651641 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		9E32EA261B4D8EE500651641 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9E3AB38A1B53208A00929239 /* FuckUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuckUp.h; sourceTree = "<group>"; };
+		9E3AB38B1B53208A00929239 /* FuckUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuckUp.m; sourceTree = "<group>"; };
+		9E3AB38D1B53208B00929239 /* FuelEconomy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuelEconomy.h; sourceTree = "<group>"; };
+		9E3AB38E1B53208B00929239 /* FuelEconomy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuelEconomy.m; sourceTree = "<group>"; };
+		9E3AB3901B53208B00929239 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		9E3AB3911B53208B00929239 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
 		9E733CAC1B52A53700C99B14 /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
 		9E733CAD1B52A53700C99B14 /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
 		9E733CAE1B52A53700C99B14 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
@@ -83,10 +90,6 @@
 		9EB49E561B4D879A0075D5F0 /* SYDE351-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SYDE351-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB49E5B1B4D879A0075D5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EB49E5C1B4D879A0075D5F0 /* SYDE351_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYDE351_iOSTests.m; sourceTree = "<group>"; };
-		9EB49E6C1B4D8AAB0075D5F0 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
-		9EB49E6D1B4D8AAB0075D5F0 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
-		9EB49E6F1B4D8AAB0075D5F0 /* FuckUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuckUp.h; sourceTree = "<group>"; };
-		9EB49E701B4D8AAB0075D5F0 /* FuckUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuckUp.m; sourceTree = "<group>"; };
 		9F60A35B58189BB26CD0309D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,10 +127,12 @@
 		9E32EA1E1B4D8D1100651641 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9EB49E6F1B4D8AAB0075D5F0 /* FuckUp.h */,
-				9EB49E701B4D8AAB0075D5F0 /* FuckUp.m */,
-				9EB49E6C1B4D8AAB0075D5F0 /* Trip.h */,
-				9EB49E6D1B4D8AAB0075D5F0 /* Trip.m */,
+				9E3AB3901B53208B00929239 /* Trip.h */,
+				9E3AB3911B53208B00929239 /* Trip.m */,
+				9E3AB38D1B53208B00929239 /* FuelEconomy.h */,
+				9E3AB38E1B53208B00929239 /* FuelEconomy.m */,
+				9E3AB38A1B53208A00929239 /* FuckUp.h */,
+				9E3AB38B1B53208A00929239 /* FuckUp.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -418,21 +423,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EAEFD031B4DBDB500630E56 /* DataCollectionViewCell.m in Sources */,
-				9EB49E6E1B4D8AAB0075D5F0 /* Trip.m in Sources */,
 				9E32EA251B4D8EBB00651641 /* LocationManager.m in Sources */,
+				9E3AB38C1B53208A00929239 /* FuckUp.m in Sources */,
 				9EB49E431B4D879A0075D5F0 /* AppDelegate.m in Sources */,
 				9E733CB51B52A53700C99B14 /* BLEUtility.m in Sources */,
 				9EAEFCF51B4D92A600630E56 /* MainNavViewController.m in Sources */,
 				9E733CBC1B52A61600C99B14 /* OBDJSONParser.m in Sources */,
 				9EAEFD121B4DD83500630E56 /* FeedbackViewController.m in Sources */,
+				9E3AB3921B53208B00929239 /* Trip.m in Sources */,
 				9E733CB71B52A53700C99B14 /* DFBlunoManager.m in Sources */,
 				9E32EA211B4D8D4200651641 /* DataProvider.m in Sources */,
 				9E733CB61B52A53700C99B14 /* DFBlunoDevice.m in Sources */,
 				9EAEFCF81B4D930C00630E56 /* HomeViewController.m in Sources */,
 				9EB49E461B4D879A0075D5F0 /* SYDE351_iOS.xcdatamodeld in Sources */,
 				9E733CB41B52A53700C99B14 /* BLEDevice.m in Sources */,
+				9E3AB38F1B53208B00929239 /* FuelEconomy.m in Sources */,
 				9EB49E401B4D879A0075D5F0 /* main.m in Sources */,
-				9EB49E711B4D8AAB0075D5F0 /* FuckUp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

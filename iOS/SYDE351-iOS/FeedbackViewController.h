@@ -19,4 +19,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *instantFuelEconomyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tripDistanceLabel;
 
+- (IBAction)startScan:(id)sender;
 @end

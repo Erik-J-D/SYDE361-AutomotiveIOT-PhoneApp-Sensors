@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationItem setTitle:@"Trip Stats"];
+    [self addDummyDataToScreen];
     self.blunoManager = [DFBlunoManager sharedInstance];
     self.aryDevices = [[NSMutableArray alloc] init];
     self.blunoManager.delegate = self;
@@ -46,6 +48,7 @@
     if (!bRepeat)
     {
         [self.aryDevices addObject:dev];
+        [self.blunoManager connectToDevice:dev];
     }
 }
 
@@ -80,7 +83,18 @@
     d2f = [NSNumber numberWithDouble:(d2f.doubleValue / 100.0)];
     _d2fLabel.text = [d2f stringValue];
     _tripDistanceLabel.text = [(NSNumber *)dictionary[@"TripDistance"] stringValue];
-
 }
 
+- (void)addDummyDataToScreen
+{
+    _speedLabel.text = @"100";
+    _instantFuelEconomyLabel.text = @"12";
+    _d2fLabel.text = @"5";
+    _tripDistanceLabel.text = @"100";
+}
+
+- (IBAction)startScan:(id)sender {
+    [self.blunoManager scan];
+    self.blunoManager = [DFBlunoManager sharedInstance];
+}
 @end

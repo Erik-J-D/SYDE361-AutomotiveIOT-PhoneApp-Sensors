@@ -8,6 +8,7 @@
 
 #import "MainNavViewController.h"
 #import "HomeViewController.h"
+#import "FeedbackViewController.h"
 
 @interface MainNavViewController ()
 
@@ -28,7 +29,9 @@
 - (void)setupViewControllers {
     HomeViewController *home = [[HomeViewController alloc] init];
     home.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil selectedImage:nil];
-    self.viewControllers = @[home];
+    FeedbackViewController *feedback = [[FeedbackViewController alloc] initWithNibName:@"FeedbackViewController" bundle:[NSBundle mainBundle]];
+    feedback.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Feedback" image:nil selectedImage:nil];
+    self.viewControllers = @[home, feedback];
 }
 
 @end
