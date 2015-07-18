@@ -5,6 +5,17 @@
 #define    MeasureValue        0x04          // Value to initiate ranging.
 #define    RegisterHighLowB    0x8f          // Register to get both High and Low bytes in 1 call.
 
+// HOW TO WIRE
+// Specific to the cable I soldered to my personal servo and Lidar
+
+// SOLID   ORANGE     GND
+// STRIPED ORANGE     5V
+
+// SOLID   BLUE       Pin 13 - Servo Signal
+
+// SOLID   GREEN      Pin 1 - Lidar SCL
+// STRIPED GREEN      Pin 0 - Lidar SDA
+
 Servo myservo;
 int pos = 0;
 int range = 0;
