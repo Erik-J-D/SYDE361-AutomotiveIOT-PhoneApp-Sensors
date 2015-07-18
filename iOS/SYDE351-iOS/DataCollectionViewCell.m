@@ -7,6 +7,7 @@
 //
 
 #import "DataCollectionViewCell.h"
+#import "FuelEconomy.h"
 
 @implementation DataCollectionViewCell {
     LineChartView *lineChartView;
@@ -16,7 +17,7 @@
     // Initialization code
 }
 
-- (void)setUpForFuelEconomy
+- (void)setUpForFuelEconomies:(NSArray *)fuelEconomies
 {
     lineChartView = [[LineChartView alloc] initWithFrame:_chartView.bounds];
     lineChartView.backgroundColor = [UIColor redColor];
@@ -37,7 +38,7 @@
     
     ChartYAxis *leftAxis = lineChartView.leftAxis;
     [leftAxis removeAllLimitLines];
-    leftAxis.customAxisMax = 30;
+    leftAxis.customAxisMax = 20;
     leftAxis.customAxisMin = 0;
     leftAxis.startAtZeroEnabled = NO;
     leftAxis.drawLimitLinesBehindDataEnabled = NO;
@@ -52,34 +53,29 @@
     
     lineChartView.legend.form = ChartLegendFormLine;
     
-    [self setDummyData:10 range:20.0];
+    [self setFuelEconomyData:fuelEconomies];
     
-    [lineChartView animateWithXAxisDuration:2.5 easingOption:ChartEasingOptionLinear];
+    [lineChartView animateWithXAxisDuration:0.75 easingOption:ChartEasingOptionLinear];
     
     [_chartView addSubview:lineChartView];
 
 }
 
-
-- (void)setDummyData:(int)count range:(double)range
+- (void)setFuelEconomyData:(NSArray *)fuelEconomies
 {
-    NSMutableArray *xVals = [[NSMutableArray alloc] init];
-    
-    for (int i = 0; i < count; i++)
-    {
-        [xVals addObject:[@(i) stringValue]];
+    NSMutableArray *xValues = [[NSMutableArray alloc] init];
+    NSMutableArray *yValues = [[NSMutableArray alloc] init];
+    int index = 0;
+    for (FuelEconomy *economy in fuelEconomies) {
+        NSDate *date = economy.date;
+        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:date];
+        [xValues addObject:[@([components day]) stringValue]];
+        
+        [yValues addObject:[[ChartDataEntry alloc] initWithValue:[economy.value floatValue] xIndex:index]];
+        index ++;
     }
     
-    NSMutableArray *yVals = [[NSMutableArray alloc] init];
-    
-    for (int i = 0; i < count; i++)
-    {
-        double mult = (range + 1);
-        double val = (double) (arc4random_uniform(mult)) + 3;
-        [yVals addObject:[[ChartDataEntry alloc] initWithValue:val xIndex:i]];
-    }
-    
-    LineChartDataSet *set1 = [[LineChartDataSet alloc] initWithYVals:yVals label:@"DataSet 1"];
+    LineChartDataSet *set1 = [[LineChartDataSet alloc] initWithYVals:yValues];
     
     [set1 setColor:[UIColor whiteColor]];
     [set1 setCircleColor:[UIColor whiteColor]];
@@ -96,9 +92,10 @@
     NSMutableArray *dataSets = [[NSMutableArray alloc] init];
     [dataSets addObject:set1];
     
-    LineChartData *data = [[LineChartData alloc] initWithXVals:xVals dataSets:dataSets];
+    LineChartData *data = [[LineChartData alloc] initWithXVals:xValues dataSets:dataSets];
     
     lineChartView.data = data;
+    
 }
 
 #pragma mark - ChartViewDelegate

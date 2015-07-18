@@ -8,6 +8,8 @@
 
 #import "FeedbackViewController.h"
 #import "OBDJSONParser.h"
+#import "Trip.h"
+#import "AppDelegate.h"
 
 @interface FeedbackViewController ()
 
@@ -15,13 +17,24 @@
 
 @implementation FeedbackViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self.navigationItem setTitle:@"Trip Stats"];
     [self addDummyDataToScreen];
     self.blunoManager = [DFBlunoManager sharedInstance];
     self.aryDevices = [[NSMutableArray alloc] init];
     self.blunoManager.delegate = self;
+    [self createNewTrip];
+}
+
+- (void)createNewTrip
+{
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    Trip *newTrip = [[Trip alloc] initWithEntity:[NSEntityDescription entityForName:@"Trip" inManagedObjectContext:appDelegate.managedObjectContext] insertIntoManagedObjectContext:appDelegate.managedObjectContext];
+    newTrip.when = [NSDate date];
+    newTrip.isCurrent = @YES;
+    [appDelegate saveContext];
 }
 
 #pragma mark - DFBlunoDelegate

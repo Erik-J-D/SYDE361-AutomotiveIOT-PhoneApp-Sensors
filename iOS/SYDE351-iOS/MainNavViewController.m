@@ -27,11 +27,13 @@
 }
 
 - (void)setupViewControllers {
-    HomeViewController *home = [[HomeViewController alloc] init];
-    home.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil selectedImage:nil];
+    HomeViewController *home = [[HomeViewController alloc] init];\
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:home];
+    homeNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil selectedImage:nil];
     FeedbackViewController *feedback = [[FeedbackViewController alloc] initWithNibName:@"FeedbackViewController" bundle:[NSBundle mainBundle]];
-    feedback.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Feedback" image:nil selectedImage:nil];
-    self.viewControllers = @[home, feedback];
+     UINavigationController *feedbackNav = [[UINavigationController alloc] initWithRootViewController:feedback];
+    feedbackNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Feedback" image:nil selectedImage:nil];
+    self.viewControllers = @[homeNav, feedbackNav];
 }
 
 @end

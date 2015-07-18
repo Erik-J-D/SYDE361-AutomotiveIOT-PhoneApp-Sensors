@@ -12,5 +12,5 @@
 @interface DataCollectionViewCell : UICollectionViewCell <ChartViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *chartView;
 @property (weak, nonatomic) IBOutlet UILabel *chartTitle;
-- (void)setUpForFuelEconomy;
+- (void)setUpForFuelEconomies:(NSArray *)fuelEconomies;
 @end
