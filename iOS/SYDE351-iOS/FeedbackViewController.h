@@ -20,4 +20,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *tripDistanceLabel;
 
 - (IBAction)startScan:(id)sender;
+- (IBAction)hardBreak:(id)sender;
+- (IBAction)hardAccel:(id)sender;
+- (IBAction)tailgaiting:(id)sender;
+- (IBAction)speeding:(id)sender;
+
 @end

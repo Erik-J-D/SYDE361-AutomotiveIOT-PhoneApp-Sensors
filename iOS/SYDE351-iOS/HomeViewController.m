@@ -35,6 +35,12 @@
     [self getAllFuelEconomies];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [_collectionView reloadData];
+}
+
 - (void)getAllFuelEconomies
 {
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];

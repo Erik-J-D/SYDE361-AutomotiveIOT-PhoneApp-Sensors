@@ -19,44 +19,9 @@
 
 - (void)setUpForFuelEconomies:(NSArray *)fuelEconomies
 {
-    lineChartView = [[LineChartView alloc] initWithFrame:_chartView.bounds];
-    lineChartView.backgroundColor = [UIColor redColor];
-    lineChartView.gridBackgroundColor = [UIColor clearColor];
-    
-    lineChartView.delegate = self;
-    
-    lineChartView.descriptionText = @"";
-    lineChartView.noDataTextDescription = @"You need to provide data for the chart.";
-    
-    lineChartView.highlightEnabled = NO;
-    lineChartView.dragEnabled = YES;
-    [lineChartView setScaleEnabled:YES];
-    lineChartView.pinchZoomEnabled = YES;
-    lineChartView.drawGridBackgroundEnabled = NO;
-    lineChartView.drawBordersEnabled = NO;
-    [lineChartView.legend setEnabled:NO];
-    
-    ChartYAxis *leftAxis = lineChartView.leftAxis;
-    [leftAxis removeAllLimitLines];
-    leftAxis.customAxisMax = 20;
-    leftAxis.customAxisMin = 0;
-    leftAxis.startAtZeroEnabled = NO;
-    leftAxis.drawLimitLinesBehindDataEnabled = NO;
-    [leftAxis setDrawGridLinesEnabled:NO];
-    
-    ChartXAxis *xAxis = lineChartView.xAxis;
-    [xAxis setDrawGridLinesEnabled:NO];
-    xAxis.labelPosition = XAxisLabelPositionBottom;
-    
-    
-    lineChartView.rightAxis.enabled = NO;
-    
-    lineChartView.legend.form = ChartLegendFormLine;
-    
+    [self setUpBaseChart];
     [self setFuelEconomyData:fuelEconomies];
-    
     [lineChartView animateWithXAxisDuration:0.75 easingOption:ChartEasingOptionLinear];
-    
     [_chartView addSubview:lineChartView];
 
 }
@@ -98,16 +63,39 @@
     
 }
 
-#pragma mark - ChartViewDelegate
-
-- (void)chartValueSelected:(ChartViewBase * __nonnull)chartView entry:(ChartDataEntry * __nonnull)entry dataSetIndex:(NSInteger)dataSetIndex highlight:(ChartHighlight * __nonnull)highlight
+- (void)setUpBaseChart
 {
-    NSLog(@"chartValueSelected");
-}
-
-- (void)chartValueNothingSelected:(ChartViewBase * __nonnull)chartView
-{
-    NSLog(@"chartValueNothingSelected");
+    lineChartView = [[LineChartView alloc] initWithFrame:_chartView.bounds];
+    lineChartView.backgroundColor = [UIColor colorWithHue:0.4 saturation:0.72 brightness:0.79 alpha:1];
+    lineChartView.gridBackgroundColor = [UIColor clearColor];
+    
+    lineChartView.descriptionText = @"";
+    lineChartView.noDataTextDescription = @"You need to provide data for the chart.";
+    
+    lineChartView.highlightEnabled = NO;
+    lineChartView.dragEnabled = YES;
+    [lineChartView setScaleEnabled:YES];
+    lineChartView.pinchZoomEnabled = YES;
+    lineChartView.drawGridBackgroundEnabled = NO;
+    lineChartView.drawBordersEnabled = NO;
+    [lineChartView.legend setEnabled:NO];
+    
+    ChartYAxis *leftAxis = lineChartView.leftAxis;
+    [leftAxis removeAllLimitLines];
+    leftAxis.customAxisMax = 20;
+    leftAxis.customAxisMin = 0;
+    leftAxis.startAtZeroEnabled = NO;
+    leftAxis.drawLimitLinesBehindDataEnabled = NO;
+    [leftAxis setDrawGridLinesEnabled:NO];
+    
+    ChartXAxis *xAxis = lineChartView.xAxis;
+    [xAxis setDrawGridLinesEnabled:NO];
+    xAxis.labelPosition = XAxisLabelPositionBottom;
+    
+    lineChartView.userInteractionEnabled = NO;
+    lineChartView.rightAxis.enabled = NO;
+    
+    lineChartView.legend.form = ChartLegendFormLine;
 }
 
 

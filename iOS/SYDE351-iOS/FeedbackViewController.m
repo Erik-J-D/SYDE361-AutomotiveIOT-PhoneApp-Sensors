@@ -10,6 +10,8 @@
 #import "OBDJSONParser.h"
 #import "Trip.h"
 #import "AppDelegate.h"
+#import "FuelEconomy.h"
+#import "FeedbackManager.h"
 
 @interface FeedbackViewController ()
 
@@ -25,7 +27,7 @@
     self.blunoManager = [DFBlunoManager sharedInstance];
     self.aryDevices = [[NSMutableArray alloc] init];
     self.blunoManager.delegate = self;
-    [self createNewTrip];
+    //[self createNewTrip];
 }
 
 - (void)createNewTrip
@@ -34,7 +36,20 @@
     Trip *newTrip = [[Trip alloc] initWithEntity:[NSEntityDescription entityForName:@"Trip" inManagedObjectContext:appDelegate.managedObjectContext] insertIntoManagedObjectContext:appDelegate.managedObjectContext];
     newTrip.when = [NSDate date];
     newTrip.isCurrent = @YES;
+    [self createNewFuelEconomiesForTrip:newTrip];
     [appDelegate saveContext];
+}
+
+- (void)createNewFuelEconomiesForTrip:(Trip *)trip
+{
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    for (int i=0;i<10;i++) {
+        NSInteger random = arc4random() % 19;
+        FuelEconomy *newFE = [[FuelEconomy alloc] initWithEntity:[NSEntityDescription entityForName:@"FuelEconomy" inManagedObjectContext:appDelegate.managedObjectContext] insertIntoManagedObjectContext:appDelegate.managedObjectContext];
+        newFE.trip = trip;
+        newFE.date = trip.when;
+        newFE.value = @(random);
+    }
 }
 
 #pragma mark - DFBlunoDelegate
@@ -109,5 +124,21 @@
 - (IBAction)startScan:(id)sender {
     [self.blunoManager scan];
     self.blunoManager = [DFBlunoManager sharedInstance];
+}
+
+- (IBAction)hardBreak:(id)sender {
+    [[FeedbackManager feedbackManager] giveFeedbackForFuckUp:@"hardBreak"];
+}
+
+- (IBAction)hardAccel:(id)sender {
+    [[FeedbackManager feedbackManager] giveFeedbackForFuckUp:@"hardAccel"];
+}
+
+- (IBAction)tailgaiting:(id)sender {
+    [[FeedbackManager feedbackManager] giveFeedbackForFuckUp:@"tailgaiting"];
+}
+
+- (IBAction)speeding:(id)sender {
+    [[FeedbackManager feedbackManager] giveFeedbackForFuckUp:@"speeding"];
 }
 @end

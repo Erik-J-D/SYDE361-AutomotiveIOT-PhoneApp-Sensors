@@ -126,8 +126,8 @@
                         <constraint firstItem="roi-jY-Xoq" firstAttribute="top" secondItem="Y05-qh-hnK" secondAttribute="bottom" constant="2" id="yEF-OZ-ve1"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAd-mw-kHO">
-                    <rect key="frame" x="137" y="377" width="35" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAd-mw-kHO">
+                    <rect key="frame" x="143" y="269" width="35" height="30"/>
                     <state key="normal" title="Scan">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -135,12 +135,63 @@
                         <action selector="startScan:" destination="-1" eventType="touchUpInside" id="s4X-l7-ddH"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kI-K0-QwO">
+                    <rect key="frame" x="8" y="461" width="304" height="30"/>
+                    <state key="normal" title="Speeding">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="speeding:" destination="-1" eventType="touchUpInside" id="6Ag-Dg-EqO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wT8-2b-w9h">
+                    <rect key="frame" x="8" y="423" width="304" height="30"/>
+                    <state key="normal" title="Tailgaiting">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tailgaiting:" destination="-1" eventType="touchUpInside" id="LhG-0z-8PE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ta-sC-DSH">
+                    <rect key="frame" x="8" y="385" width="304" height="30"/>
+                    <state key="normal" title="Hard Accel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hardAccel:" destination="-1" eventType="touchUpInside" id="Xsj-cL-J6U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0b1-Wc-Yjc">
+                    <rect key="frame" x="8" y="347" width="304" height="30"/>
+                    <state key="normal" title="Hard Breaking">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hardBreak:" destination="-1" eventType="touchUpInside" id="6gF-dM-oyK"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.6588235294" green="0.6588235294" blue="0.6588235294" alpha="0.11" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="7kI-K0-QwO" secondAttribute="bottom" constant="77" id="83U-IJ-uUw"/>
                 <constraint firstAttribute="trailing" secondItem="egg-RB-HDO" secondAttribute="trailing" id="8Sx-u6-LBR"/>
+                <constraint firstItem="7kI-K0-QwO" firstAttribute="top" secondItem="wT8-2b-w9h" secondAttribute="bottom" constant="8" id="ALP-LU-MRf"/>
+                <constraint firstItem="YAd-mw-kHO" firstAttribute="top" secondItem="egg-RB-HDO" secondAttribute="bottom" constant="17" id="EC0-ts-wez"/>
+                <constraint firstAttribute="centerX" secondItem="4Ta-sC-DSH" secondAttribute="centerX" id="Gyd-Nn-LJ1"/>
+                <constraint firstItem="4Ta-sC-DSH" firstAttribute="top" secondItem="0b1-Wc-Yjc" secondAttribute="bottom" constant="8" id="I9B-Zb-0wh"/>
+                <constraint firstAttribute="centerX" secondItem="YAd-mw-kHO" secondAttribute="centerX" constant="-0.5" id="O2U-rU-O0j"/>
+                <constraint firstItem="wT8-2b-w9h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="WQV-0q-fe7"/>
+                <constraint firstItem="0b1-Wc-Yjc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="bgT-yR-yGE"/>
+                <constraint firstAttribute="centerX" secondItem="0b1-Wc-Yjc" secondAttribute="centerX" id="dc8-fq-pNd"/>
                 <constraint firstItem="egg-RB-HDO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="fI3-I6-9J4"/>
+                <constraint firstItem="7kI-K0-QwO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="g8x-6R-fTV"/>
+                <constraint firstItem="4Ta-sC-DSH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="mf7-8L-m85"/>
+                <constraint firstAttribute="centerX" secondItem="wT8-2b-w9h" secondAttribute="centerX" id="t03-dr-aJ0"/>
+                <constraint firstItem="wT8-2b-w9h" firstAttribute="top" secondItem="4Ta-sC-DSH" secondAttribute="bottom" constant="8" id="u26-ru-D7f"/>
                 <constraint firstItem="egg-RB-HDO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uYl-m6-Lcn"/>
+                <constraint firstAttribute="centerX" secondItem="7kI-K0-QwO" secondAttribute="centerX" id="uuQ-o2-Cxn"/>
+                <constraint firstItem="YAd-mw-kHO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="143" id="xr5-TE-XDn"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="433" y="417"/>

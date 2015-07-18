@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Charts/Charts-Swift.h>
 
-@interface DataCollectionViewCell : UICollectionViewCell <ChartViewDelegate>
+@interface DataCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIView *chartView;
 @property (weak, nonatomic) IBOutlet UILabel *chartTitle;
 - (void)setUpForFuelEconomies:(NSArray *)fuelEconomies;

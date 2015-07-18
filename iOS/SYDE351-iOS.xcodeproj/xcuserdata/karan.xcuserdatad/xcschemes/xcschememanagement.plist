@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Notification - SYDE351-iOS WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>SYDE351-iOS WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>SYDE351-iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>9E3DA9AA1B5AA261008AA953</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9EB49E391B4D87990075D5F0</key>
 		<dict>
 			<key>primary</key>

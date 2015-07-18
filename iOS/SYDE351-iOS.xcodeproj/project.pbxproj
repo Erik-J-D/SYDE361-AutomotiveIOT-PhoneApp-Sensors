@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1665A60D3920C6D7FBB0DFD4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9435F8D5BA3027BAD586C7CB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1A138D996048CFAF2C58743A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9435F8D5BA3027BAD586C7CB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9E32EA211B4D8D4200651641 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E32EA201B4D8D4200651641 /* DataProvider.m */; };
 		9E32EA251B4D8EBB00651641 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E32EA241B4D8EBB00651641 /* LocationManager.m */; };
 		9E32EA271B4D8EE500651641 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E32EA261B4D8EE500651641 /* CoreLocation.framework */; };
 		9E3AB38C1B53208A00929239 /* FuckUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3AB38B1B53208A00929239 /* FuckUp.m */; };
 		9E3AB38F1B53208B00929239 /* FuelEconomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3AB38E1B53208B00929239 /* FuelEconomy.m */; };
 		9E3AB3921B53208B00929239 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3AB3911B53208B00929239 /* Trip.m */; };
+		9E3DA9A31B5AA261008AA953 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DA9A21B5AA261008AA953 /* InterfaceController.m */; };
+		9E3DA9A61B5AA261008AA953 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DA9A51B5AA261008AA953 /* NotificationController.m */; };
+		9E3DA9A81B5AA261008AA953 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA9A71B5AA261008AA953 /* Images.xcassets */; };
+		9E3DA9AC1B5AA261008AA953 /* SYDE351-iOS WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA9AB1B5AA261008AA953 /* SYDE351-iOS WatchKit App.app */; };
+		9E3DA9B41B5AA261008AA953 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA9B21B5AA261008AA953 /* Interface.storyboard */; };
+		9E3DA9B61B5AA261008AA953 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3DA9B51B5AA261008AA953 /* Images.xcassets */; };
+		9E3DA9B91B5AA261008AA953 /* SYDE351-iOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E3DA99C1B5AA261008AA953 /* SYDE351-iOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9E56C3D11B5ABFEF00BCA0B0 /* FuelInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E56C3D01B5ABFEF00BCA0B0 /* FuelInterfaceController.m */; };
+		9E56C3D61B5ACB3E00BCA0B0 /* FeedbackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E56C3D51B5ACB3E00BCA0B0 /* FeedbackManager.m */; };
 		9E733CB41B52A53700C99B14 /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CAD1B52A53700C99B14 /* BLEDevice.m */; };
 		9E733CB51B52A53700C99B14 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CAF1B52A53700C99B14 /* BLEUtility.m */; };
 		9E733CB61B52A53700C99B14 /* DFBlunoDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E733CB11B52A53700C99B14 /* DFBlunoDevice.m */; };
@@ -32,9 +42,24 @@
 		9EB49E4E1B4D879A0075D5F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB49E4D1B4D879A0075D5F0 /* Images.xcassets */; };
 		9EB49E511B4D879A0075D5F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB49E4F1B4D879A0075D5F0 /* LaunchScreen.xib */; };
 		9EB49E5D1B4D879A0075D5F0 /* SYDE351_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB49E5C1B4D879A0075D5F0 /* SYDE351_iOSTests.m */; };
+		9ECCCF441B5AAE83003AD0C9 /* TTWKPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECCCF431B5AAE83003AD0C9 /* TTWKPieChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9E3DA9AD1B5AA261008AA953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB49E321B4D87990075D5F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E3DA9AA1B5AA261008AA953;
+			remoteInfo = "SYDE351-iOS WatchKit App";
+		};
+		9E3DA9B71B5AA261008AA953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB49E321B4D87990075D5F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E3DA99B1B5AA261008AA953;
+			remoteInfo = "SYDE351-iOS WatchKit Extension";
+		};
 		9EB49E571B4D879A0075D5F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9EB49E321B4D87990075D5F0 /* Project object */;
@@ -43,6 +68,20 @@
 			remoteInfo = "SYDE351-iOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E3DA9C01B5AA262008AA953 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9E3DA9B91B5AA261008AA953 /* SYDE351-iOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8B720872D06E78A3332C0ECB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +97,22 @@
 		9E3AB38E1B53208B00929239 /* FuelEconomy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuelEconomy.m; sourceTree = "<group>"; };
 		9E3AB3901B53208B00929239 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
 		9E3AB3911B53208B00929239 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		9E3DA99C1B5AA261008AA953 /* SYDE351-iOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SYDE351-iOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3DA99F1B5AA261008AA953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E3DA9A01B5AA261008AA953 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9E3DA9A11B5AA261008AA953 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		9E3DA9A21B5AA261008AA953 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		9E3DA9A41B5AA261008AA953 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		9E3DA9A51B5AA261008AA953 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		9E3DA9A71B5AA261008AA953 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9E3DA9AB1B5AA261008AA953 /* SYDE351-iOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SYDE351-iOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3DA9B11B5AA261008AA953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E3DA9B31B5AA261008AA953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9E3DA9B51B5AA261008AA953 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9E56C3CF1B5ABFEF00BCA0B0 /* FuelInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuelInterfaceController.h; sourceTree = "<group>"; };
+		9E56C3D01B5ABFEF00BCA0B0 /* FuelInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuelInterfaceController.m; sourceTree = "<group>"; };
+		9E56C3D41B5ACB3E00BCA0B0 /* FeedbackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackManager.h; sourceTree = "<group>"; };
+		9E56C3D51B5ACB3E00BCA0B0 /* FeedbackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackManager.m; sourceTree = "<group>"; };
 		9E733CAC1B52A53700C99B14 /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
 		9E733CAD1B52A53700C99B14 /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
 		9E733CAE1B52A53700C99B14 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
@@ -90,10 +145,20 @@
 		9EB49E561B4D879A0075D5F0 /* SYDE351-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SYDE351-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB49E5B1B4D879A0075D5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EB49E5C1B4D879A0075D5F0 /* SYDE351_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYDE351_iOSTests.m; sourceTree = "<group>"; };
+		9ECCCF421B5AAE83003AD0C9 /* TTWKPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTWKPieChart.h; sourceTree = "<group>"; };
+		9ECCCF431B5AAE83003AD0C9 /* TTWKPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTWKPieChart.m; sourceTree = "<group>"; };
 		9F60A35B58189BB26CD0309D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9E3DA9991B5AA261008AA953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A138D996048CFAF2C58743A /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EB49E371B4D87990075D5F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,8 +212,53 @@
 				9E32EA241B4D8EBB00651641 /* LocationManager.m */,
 				9E733CBA1B52A61600C99B14 /* OBDJSONParser.h */,
 				9E733CBB1B52A61600C99B14 /* OBDJSONParser.m */,
+				9E56C3D41B5ACB3E00BCA0B0 /* FeedbackManager.h */,
+				9E56C3D51B5ACB3E00BCA0B0 /* FeedbackManager.m */,
 			);
 			name = "Data Providers + Managers";
+			sourceTree = "<group>";
+		};
+		9E3DA99D1B5AA261008AA953 /* SYDE351-iOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9ECCCF411B5AAE51003AD0C9 /* Chart Stuff */,
+				9E3DA9A11B5AA261008AA953 /* InterfaceController.h */,
+				9E3DA9A21B5AA261008AA953 /* InterfaceController.m */,
+				9E3DA9A41B5AA261008AA953 /* NotificationController.h */,
+				9E3DA9A51B5AA261008AA953 /* NotificationController.m */,
+				9E56C3CF1B5ABFEF00BCA0B0 /* FuelInterfaceController.h */,
+				9E56C3D01B5ABFEF00BCA0B0 /* FuelInterfaceController.m */,
+				9E3DA9A71B5AA261008AA953 /* Images.xcassets */,
+				9E3DA99E1B5AA261008AA953 /* Supporting Files */,
+			);
+			path = "SYDE351-iOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9E3DA99E1B5AA261008AA953 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E3DA99F1B5AA261008AA953 /* Info.plist */,
+				9E3DA9A01B5AA261008AA953 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E3DA9AF1B5AA261008AA953 /* SYDE351-iOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9E3DA9B21B5AA261008AA953 /* Interface.storyboard */,
+				9E3DA9B51B5AA261008AA953 /* Images.xcassets */,
+				9E3DA9B01B5AA261008AA953 /* Supporting Files */,
+			);
+			path = "SYDE351-iOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		9E3DA9B01B5AA261008AA953 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E3DA9B11B5AA261008AA953 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9E733CAA1B52A51F00C99B14 /* Bluno */ = {
@@ -203,6 +313,8 @@
 			children = (
 				9EB49E3C1B4D879A0075D5F0 /* SYDE351-iOS */,
 				9EB49E591B4D879A0075D5F0 /* SYDE351-iOSTests */,
+				9E3DA99D1B5AA261008AA953 /* SYDE351-iOS WatchKit Extension */,
+				9E3DA9AF1B5AA261008AA953 /* SYDE351-iOS WatchKit App */,
 				9EB49E3B1B4D879A0075D5F0 /* Products */,
 				FB358B805C5A563A2FD432CF /* Pods */,
 				7B27CED2E4314C2CA0E9DCCE /* Frameworks */,
@@ -214,6 +326,8 @@
 			children = (
 				9EB49E3A1B4D879A0075D5F0 /* SYDE351-iOS.app */,
 				9EB49E561B4D879A0075D5F0 /* SYDE351-iOSTests.xctest */,
+				9E3DA99C1B5AA261008AA953 /* SYDE351-iOS WatchKit Extension.appex */,
+				9E3DA9AB1B5AA261008AA953 /* SYDE351-iOS WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -261,6 +375,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9ECCCF411B5AAE51003AD0C9 /* Chart Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				9ECCCF421B5AAE83003AD0C9 /* TTWKPieChart.h */,
+				9ECCCF431B5AAE83003AD0C9 /* TTWKPieChart.m */,
+			);
+			name = "Chart Stuff";
+			sourceTree = "<group>";
+		};
 		FB358B805C5A563A2FD432CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +396,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9E3DA99B1B5AA261008AA953 /* SYDE351-iOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E3DA9BF1B5AA262008AA953 /* Build configuration list for PBXNativeTarget "SYDE351-iOS WatchKit Extension" */;
+			buildPhases = (
+				11802CF9DEBD410FC28152F1 /* Check Pods Manifest.lock */,
+				9E3DA9981B5AA261008AA953 /* Sources */,
+				9E3DA9991B5AA261008AA953 /* Frameworks */,
+				9E3DA99A1B5AA261008AA953 /* Resources */,
+				7EBB3D95D4814A9F5EB012A5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E3DA9AE1B5AA261008AA953 /* PBXTargetDependency */,
+			);
+			name = "SYDE351-iOS WatchKit Extension";
+			productName = "SYDE351-iOS WatchKit Extension";
+			productReference = 9E3DA99C1B5AA261008AA953 /* SYDE351-iOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		9E3DA9AA1B5AA261008AA953 /* SYDE351-iOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E3DA9BE1B5AA262008AA953 /* Build configuration list for PBXNativeTarget "SYDE351-iOS WatchKit App" */;
+			buildPhases = (
+				9E3DA9A91B5AA261008AA953 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SYDE351-iOS WatchKit App";
+			productName = "SYDE351-iOS WatchKit App";
+			productReference = 9E3DA9AB1B5AA261008AA953 /* SYDE351-iOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		9EB49E391B4D87990075D5F0 /* SYDE351-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EB49E601B4D879A0075D5F0 /* Build configuration list for PBXNativeTarget "SYDE351-iOS" */;
@@ -283,10 +441,12 @@
 				9EB49E381B4D87990075D5F0 /* Resources */,
 				4FF9A8753861B878457CC13B /* Copy Pods Resources */,
 				6A660B4334137D1589AA2356 /* Embed Pods Frameworks */,
+				9E3DA9C01B5AA262008AA953 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9E3DA9B81B5AA261008AA953 /* PBXTargetDependency */,
 			);
 			name = "SYDE351-iOS";
 			productName = "SYDE351-iOS";
@@ -320,6 +480,12 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = karanthukral;
 				TargetAttributes = {
+					9E3DA99B1B5AA261008AA953 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					9E3DA9AA1B5AA261008AA953 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					9EB49E391B4D87990075D5F0 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -344,11 +510,31 @@
 			targets = (
 				9EB49E391B4D87990075D5F0 /* SYDE351-iOS */,
 				9EB49E551B4D879A0075D5F0 /* SYDE351-iOSTests */,
+				9E3DA99B1B5AA261008AA953 /* SYDE351-iOS WatchKit Extension */,
+				9E3DA9AA1B5AA261008AA953 /* SYDE351-iOS WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9E3DA99A1B5AA261008AA953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3DA9A81B5AA261008AA953 /* Images.xcassets in Resources */,
+				9E3DA9AC1B5AA261008AA953 /* SYDE351-iOS WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E3DA9A91B5AA261008AA953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3DA9B41B5AA261008AA953 /* Interface.storyboard in Resources */,
+				9E3DA9B61B5AA261008AA953 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EB49E381B4D87990075D5F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +556,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		11802CF9DEBD410FC28152F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		3A21BE9830298239ABAD2AF7 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,13 +616,40 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7EBB3D95D4814A9F5EB012A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9E3DA9981B5AA261008AA953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3DA9A61B5AA261008AA953 /* NotificationController.m in Sources */,
+				9E56C3D11B5ABFEF00BCA0B0 /* FuelInterfaceController.m in Sources */,
+				9ECCCF441B5AAE83003AD0C9 /* TTWKPieChart.m in Sources */,
+				9E3DA9A31B5AA261008AA953 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EB49E361B4D87990075D5F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E56C3D61B5ACB3E00BCA0B0 /* FeedbackManager.m in Sources */,
 				9EAEFD031B4DBDB500630E56 /* DataCollectionViewCell.m in Sources */,
 				9E32EA251B4D8EBB00651641 /* LocationManager.m in Sources */,
 				9E3AB38C1B53208A00929239 /* FuckUp.m in Sources */,
@@ -453,6 +681,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9E3DA9AE1B5AA261008AA953 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E3DA9AA1B5AA261008AA953 /* SYDE351-iOS WatchKit App */;
+			targetProxy = 9E3DA9AD1B5AA261008AA953 /* PBXContainerItemProxy */;
+		};
+		9E3DA9B81B5AA261008AA953 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E3DA99B1B5AA261008AA953 /* SYDE351-iOS WatchKit Extension */;
+			targetProxy = 9E3DA9B71B5AA261008AA953 /* PBXContainerItemProxy */;
+		};
 		9EB49E581B4D879A0075D5F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9EB49E391B4D87990075D5F0 /* SYDE351-iOS */;
@@ -461,6 +699,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9E3DA9B21B5AA261008AA953 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E3DA9B31B5AA261008AA953 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		9EB49E4F1B4D879A0075D5F0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -472,6 +718,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9E3DA9BA1B5AA262008AA953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F60A35B58189BB26CD0309D /* Pods.debug.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SYDE351-iOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9E3DA9BB1B5AA262008AA953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B720872D06E78A3332C0ECB /* Pods.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "SYDE351-iOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9E3DA9BC1B5AA262008AA953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = SYDE351_iOS_WatchKit_Extension;
+				INFOPLIST_FILE = "SYDE351-iOS WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		9E3DA9BD1B5AA262008AA953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SYDE351_iOS_WatchKit_Extension;
+				INFOPLIST_FILE = "SYDE351-iOS WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		9EB49E5E1B4D879A0075D5F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -611,6 +915,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9E3DA9BE1B5AA262008AA953 /* Build configuration list for PBXNativeTarget "SYDE351-iOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3DA9BC1B5AA262008AA953 /* Debug */,
+				9E3DA9BD1B5AA262008AA953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E3DA9BF1B5AA262008AA953 /* Build configuration list for PBXNativeTarget "SYDE351-iOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3DA9BA1B5AA262008AA953 /* Debug */,
+				9E3DA9BB1B5AA262008AA953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9EB49E351B4D87990075D5F0 /* Build configuration list for PBXProject "SYDE351-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
