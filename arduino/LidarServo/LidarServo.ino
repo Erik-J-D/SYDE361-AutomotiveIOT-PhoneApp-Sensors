@@ -13,8 +13,8 @@
 
 // SOLID   BLUE       Pin 13 - Servo Signal
 
-// SOLID   GREEN      Pin 1 - Lidar SCL
-// STRIPED GREEN      Pin 0 - Lidar SDA
+// SOLID   GREEN      Pin 16 - Lidar SCL
+// STRIPED GREEN      Pin 17 - Lidar SDA
 
 Servo myservo;
 int pos = 0;
